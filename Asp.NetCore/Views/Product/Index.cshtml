@@ -1,0 +1,25 @@
+﻿<h1>Merhabalar</h1>
+
+@{
+    string Name = "yavuz";
+    string Surname = "emrem";
+    int age = 18;
+}
+
+@{
+    if(Name == "yavuz" && Surname == "emrem" && age == 18)
+    {
+        <ul>
+        <li>@Name</li>
+        <li>@Surname</li>
+        <li>@age</li>
+        </ul>
+    }
+    else
+    {
+        <span>Error...</span>
+    }
+
+}
+
+isim soyisim : @(Name + "" + Surname)
