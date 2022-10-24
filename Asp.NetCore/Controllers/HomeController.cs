@@ -13,5 +13,12 @@ namespace Asp.NetCore.Controllers
         {
             return "Yavuz Selam";
         }
+
+        public IActionResult Selamla()
+        {
+            ViewResult result = View("Selamla1");
+            return result;
+        }
+
     }
 }
